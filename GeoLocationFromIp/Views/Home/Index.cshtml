@@ -1,0 +1,11 @@
+﻿@model MaxMind.GeoIP2.Responses.CityResponse
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row" style="margin-top: 50px;">
+    <div class="col-md-12">
+        <p>Hey there, welcome visitor from <strong>@Model.City, @Model.Country!</strong></p>
+        <p>Your time zone is <strong>@Model.Location.TimeZone</strong></p>
+    </div>
+</div>
